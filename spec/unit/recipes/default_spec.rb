@@ -14,7 +14,7 @@ describe 'node::default' do
       runner = ChefSpec::ServerRunner.new(platform: 'ubuntu', version: '16.04')
       runner.converge(described_recipe)
     end
-    
+
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
@@ -30,7 +30,5 @@ describe 'node::default' do
     it 'should install pm2 via npm' do
       expect(chef_run).to install_nodejs_npm('pm2')
     end
-
-
   end
 end
