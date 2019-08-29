@@ -5,7 +5,7 @@ license 'All Rights Reserved'
 description 'Installs/Configures node'
 long_description 'Installs/Configures node'
 version '0.1.0'
-chef_version '>= 14.0'
+# chef_version '>= 14.0'
 
 depends 'nodejs', '~> 6.0.0'
 depends 'apt'
