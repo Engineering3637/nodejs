@@ -30,5 +30,8 @@ describe 'node::default' do
     it 'should install pm2 via npm' do
       expect(chef_run).to install_nodejs_npm('pm2')
     end
+    it 'should run npm install' do
+      expect(chef_run).to run_execute('sudo npm install')
+    end
   end
 end
